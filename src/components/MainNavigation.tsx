@@ -25,7 +25,7 @@ const MainNavigation: FC<MainNavigationProps> = ({ items }) => {
         className="hidden md:flex items-center justify-center gap-2"
         href="/"
       >
-        <span className="text-xl font-bold ">V</span>
+        <Icons.Snail className="" />
         <span className="font-bold text-black">Protrack</span>
       </Link>
       {items.length > 0 ? (

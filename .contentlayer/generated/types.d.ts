@@ -22,6 +22,19 @@ export type Author = {
   slugAsParams: string
 }
 
+export type Page = {
+  /** File path relative to `contentDirPath` */
+  _id: string
+  _raw: Local.RawDocumentData
+  type: 'Page'
+  title: string
+  description: string
+  /** MDX file body */
+  body: MDX
+  slug: string
+  slugAsParams: string
+}
+
 export type Post = {
   /** File path relative to `contentDirPath` */
   _id: string
@@ -47,8 +60,8 @@ export type Post = {
 export type AllTypes = DocumentTypes | NestedTypes
 export type AllTypeNames = DocumentTypeNames | NestedTypeNames
 
-export type DocumentTypes = Author | Post
-export type DocumentTypeNames = 'Author' | 'Post'
+export type DocumentTypes = Author | Page | Post
+export type DocumentTypeNames = 'Author' | 'Page' | 'Post'
 
 export type NestedTypes = never
 export type NestedTypeNames = never
@@ -57,6 +70,7 @@ export type DataExports = {
   allDocuments: DocumentTypes[]
   allPosts: Post[]
   allAuthors: Author[]
+  allPages: Page[]
 }
 
 
@@ -77,6 +91,7 @@ declare global {
 
 export type DocumentTypeMap = {
   Author: Author
+  Page: Page
   Post: Post
 }
 
