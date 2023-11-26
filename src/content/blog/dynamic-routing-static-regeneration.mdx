@@ -1,0 +1,53 @@
+---
+title: Dynamic Routing and Static Regeneration
+description: How to use incremental static regeneration using dynamic routes.
+date: "2023-01-02"
+image: /images/blog/blog-post-3.jpg
+authors:
+  - venkat
+---
+
+The createContentlayerPlugin function allows you to add non-default configuration options to the next-contentlayer plugin. This is not a common use. See withContentlayer
+for typical use.
+
+Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.
+
+By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less time undoing user-agent styles, but when you _really are_ just trying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive.
+
+We get lots of complaints about it actually, with people regularly asking us things like:
+
+<Callout>
+  The text below is from the [Tailwind
+  CSS](https://play.tailwindcss.com/uj1vGACRJA?layout=preview) docs. I copied it
+  here to test the markdown styles. **Tailwind is awesome. You should use it.**
+</Callout>
+
+```html
+<article class="prose">
+  <h1>Garlic bread with cheese: What the science tells us</h1>
+  <p>
+    For years parents have espoused the health benefits of eating garlic bread
+    with cheese to their children, with the food earning such an iconic status
+    in our culture that kids will often dress up as warm, cheesy loaf for
+    Halloween.
+  </p>
+  <p>
+    But a recent study shows that the celebrated appetizer may be linked to a
+    series of rabies cases springing up around the country.
+  </p>
+</article>
+```
+
+For more information about how to use the plugin and the features it includes, [read the documentation](https://github.com/tailwindcss/typography/blob/master/README.md).
+
+---
+
+## What to expect from here on out
+
+<Image
+  src="/images/blog/blog-post-3.jpg"
+  width="718"
+  className="border"
+  height="404"
+  alt="Image"
+/>
