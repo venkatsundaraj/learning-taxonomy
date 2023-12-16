@@ -16,7 +16,7 @@ interface PageProps {
   };
 }
 
-export const getPostFromParams = async function ({ params }: PageProps) {
+const getPostFromParams = async function ({ params }: PageProps) {
   const post = allPosts.find((p) => p.slugAsParams === params?.slug?.join("/"));
 
   if (!post) notFound();

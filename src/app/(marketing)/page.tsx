@@ -53,7 +53,7 @@ export default async function Home() {
           </h1>
           <p className="font-paragraph max-w-3xl text-muted-foreground tracking-light">
             Recently, I came across taxonomy repo where I saw he has done basic
-            things right. Suddenly I thought why don't I follow his Idead. So
+            things right. Suddenly I thought why dont I follow his Idead. So
             here I am.
           </p>
           <div className="flex items-center justify-center gap-4">

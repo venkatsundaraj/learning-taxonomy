@@ -4,8 +4,9 @@ import { cn } from "@/lib/util";
 import Link from "next/link";
 import { FC } from "react";
 import UserauthForm from "@/components/UserauthForm";
+import { Metadata } from "next";
 
-export const metaData = {
+export const metadata: Metadata = {
   title: "Register",
   description: "Register here if your are a new user",
 };

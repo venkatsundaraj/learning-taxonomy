@@ -12,7 +12,7 @@ interface PageProps {
   };
 }
 
-export const getPageFromParams = async function ({ params }: PageProps) {
+const getPageFromParams = async function ({ params }: PageProps) {
   const post = allPages.find(
     (page) => page.slugAsParams === params.slug.join("/")
   );
