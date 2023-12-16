@@ -1,4 +1,12 @@
-import { LucideProps, XCircle, Menu, ChevronLeft, Snail } from "lucide-react";
+import {
+  LucideProps,
+  XCircle,
+  Menu,
+  ChevronLeft,
+  Snail,
+  Heart,
+  Loader2,
+} from "lucide-react";
 
 export const Icons = {
   Logo: ({ ...props }: LucideProps) => (
@@ -7,9 +15,11 @@ export const Icons = {
     </svg>
   ),
   XCircle,
+  Heart,
   Menu,
   ChevronLeft,
   Snail,
+  Loader2,
 };
 
 export type Icon = keyof typeof Icons;

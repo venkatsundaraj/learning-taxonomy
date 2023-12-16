@@ -34,6 +34,7 @@ interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   children: React.ReactNode;
+  isLoading?: boolean;
 }
 
 const Button: FC<ButtonProps> = ({
@@ -41,10 +42,12 @@ const Button: FC<ButtonProps> = ({
   className,
   variant,
   size,
+  isLoading,
   ...props
 }) => {
   return (
     <button
+      disabled={isLoading}
       {...props}
       className={cn(buttonVariants({ variant, size }), className)}
     >

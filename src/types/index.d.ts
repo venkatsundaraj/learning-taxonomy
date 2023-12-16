@@ -7,6 +7,7 @@ export interface SiteConfig {
     twitter: string;
     github: string;
   };
+  name?: string;
 }
 
 export interface MainNavItem {

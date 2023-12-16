@@ -10,4 +10,5 @@ export const siteConfig: SiteConfig = {
     github: "https://github.com/venkatsundaraj/",
     twitter: "https://twitter.com/venkatsundaraj",
   },
+  name: "Venkat",
 };
